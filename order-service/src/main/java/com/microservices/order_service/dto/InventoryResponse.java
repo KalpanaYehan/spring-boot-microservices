@@ -1,4 +1,4 @@
-package com.microservices.inventory_service.dto;
+package com.microservices.order_service.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
