@@ -91,18 +91,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.2</version>
+				<configuration>
+					<from>
+						<image>eclipse-temurin:21-jre</image>
+					</from>
+					<to><image>registry.hub.docker.com/kalpanamax/${project.artifactId}</image></to>
+				</configuration>
+			</plugin>
 		</plugins>
-		<plugin>
-			<groupId>com.google.cloud.tools</groupId>
-			<artifactId>jib-maven-plugin</artifactId>
-			<version>3.2.1</version>
-			<configuration>
-				<from>
-					<image>eclipse-temurin:21-jre</image>
-				</from>
-				<to><image>registry.hub.docker.com/kalpanayehan/${project.artifactId}</image></to>
-			</configuration>
-		</plugin>
 	</build>
 
 </project>
